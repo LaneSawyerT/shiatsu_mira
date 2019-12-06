@@ -4,7 +4,9 @@ body {
 
 /* Containers */
 
-.container-wrapper {}
+.container-wrapper {
+    text-align: center;
+}
 
 .container-wrapper--red {
     background-color: #f05f40;
@@ -13,18 +15,59 @@ body {
 
 
 .callout-container {
-    height: 100vh;
-
-    background: url(../images/hands_concrete.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    height: 90vh;
+    background: url(../images/hands.png) no-repeat center center fixed;
     background-size: cover;
-
     display: none;
     align-items: center;
     justify-content: center;
+    position: relative;
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 
+}
+
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.expect-container {
+    height: 50vh;
+    background: url(../images/massage.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0% -400px;
+}
+
+.expect {
+    position: relative;
+    top: -75px;
+}
+
+.expect-text {
+    font-size: 1.5rem;
+    background: white;
+    padding: 15px;
+}
+
+.quotes-container {
+    background: rgba(229, 255, 245, 0.5);
+}
+
+.about-container {
+    background: rgb(120, 159, 144);
+    color: white;
+}
+
+.price-container {
+    height: 100vh;
+    background: url(../images/aromatherapy.jpg) no-repeat center center;
+    background-size: cover;
     position: relative;
 }
 
@@ -37,8 +80,24 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.price-box {
+    align-items: center;
+    justify-content: center;
+    background: rgba(229, 255, 245, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 80%;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+    font-family: Cinzel;
+    font-size: 24px;
+
+}
+
 .content-container {
-    padding-top: 75px;
+    padding-top: 35px;
     padding-bottom: 75px;
 }
 
@@ -51,7 +110,7 @@ body {
     text-align: right;
     font-family: Cinzel;
     margin-bottom: 0;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -117,7 +176,7 @@ body {
     color: white;
 }
 
-#cursive-text{
+#cursive-text {
     font-family: 'Dancing Script', cursive;
 }
 
@@ -209,6 +268,7 @@ body {
 /* Page Headers */
 
 .page-header {
+    margin-top: 20px;
     margin-bottom: 0;
     border-bottom: 0;
     text-align: center;
@@ -216,6 +276,12 @@ body {
 
 .page-header h2 {
     margin-top: 0;
+    font-family: Cinzel;
+}
+
+.price-heading {
+    color: white;
+    padding-top: 35px;
 }
 
 /* Testimonials */
@@ -250,4 +316,155 @@ blockquote.quote {
     font-weight: bold;
     margin-top: 10px;
     color: #f05f40;
+}
+
+.contact-box {
+    padding: 5px;
+    border: 1px solid white;
+}
+
+a {
+    color: white;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 840px) {
+    .price-box {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 800px) and (min-width:500px) {
+    .callout-container {
+        height: 30vh;
+        margin-top: 50px;
+        padding-top: 25px;
+        background: url(../images/hands.png) no-repeat fixed;
+        background-size: cover;
+    }
+
+    .expect-container {
+        height: 30vh;
+        margin-top: 50px;
+        padding-top: 150px;
+        background-position: 0 -200px;
+    }
+
+    .jumbotron h1 {
+        font-size: 2.5em;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+}
+
+
+@media (max-width: 499px) {
+    .callout-container {
+        height: 20vh;
+        margin-top: 50px;
+        padding-top: 20px;
+        background: url(../images/hands.png) no-repeat fixed;
+        background-position: 50% 5%;
+        background-size: contain;
+
+        animation-name: hero-zoom;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+    }
+
+    .jumbotron h1 {
+        font-size: 1.8em;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .price-box {
+        font-size: 1.3rem;
+        padding: 10px;
+    }
+
+    .quotes .page-header {
+        margin-bottom: 5px;
+    }
+
+    .expect-container {
+        height: 50vh;
+        background: url(../images/massage.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    .expect {
+        position: relative;
+        top: -75px;
+    }
+
+    .expect-text {
+        font-size: 1.5rem;
+        background: white;
+        padding: 15px;
+    }
+}
+
+.selectLanguage {
+    height: 32px;
+    width: 32px;
+    border: 0;
+    background-color: transparent;
+    margin-left: -10px;
+    margin-right: 10px;
+    margin-top: 8px;
+    padding: 0;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,
+    .navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in {
+        display: block !important;
+    }
 }
