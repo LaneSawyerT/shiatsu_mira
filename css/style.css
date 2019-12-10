@@ -505,10 +505,10 @@ a {
     .callout-container {
         height: 200px;
         margin-top: 50px;
-        padding-top: 20px;
+        /* padding-top: 20px; */
         background: url(../images/logo_new.png) no-repeat fixed;
-        background-size: contain;
-        background-position-y: 50px;
+        background-size: 100%;
+        background-position-y: 1.5%;
         animation: none;
         display: block;
     }
@@ -547,7 +547,7 @@ a {
     }
 
     .whatexpect-container {
-    height: 50vh;
+    height: 45vh;
     background-size: contain;
     background-position: center;
 }
