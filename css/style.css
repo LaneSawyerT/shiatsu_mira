@@ -70,16 +70,16 @@ body {
 
 .outer
 {
-  height: 90vh;
+  height: 95vh;
   width: 100%;
   overflow: hidden;
   
 }
 
 .callout-container {
-    height: 90vh;
-    background: url(../images/hands.png) no-repeat center center fixed;
-    background-size: cover;
+    height: 100vh;
+    background: url(../images/logo_new.png) no-repeat center center fixed;
+    background-size: contain;
     display: none;
     align-items: center;
     justify-content: center;
@@ -148,7 +148,7 @@ body {
     left: 0;
     height: 100%;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 .price-box {
@@ -162,7 +162,7 @@ body {
     height: 80%;
     align-items: center;
     justify-content: center;
-    font-family: Cinzel;
+    font-family: "Noto Serif";
     font-size: 18px;
 
 }
@@ -276,23 +276,6 @@ body {
     background-color: transparent;
 }
 
-.jumbotron h1 {
-    color: white;
-    font-weight: bold;
-    margin-bottom: 30px;
-    color: white;
-}
-
-.jumbotron .lead {
-    color: #a7a7a7;
-    margin: 25px 0;
-}
-
-.jumbotron small {
-    font-size: 60%;
-    font-style: italic;
-    color: #d0d0d0;
-}
 
 /* Block dividers */
 
@@ -440,7 +423,7 @@ a {
 }
 
 @media (max-width: 800px) and (min-width:500px) {
-    
+
     .pricing-container {
         width: 100vw;
         background-size: cover;
@@ -451,7 +434,7 @@ a {
         background-position: center;
     }
     .outer {
-        height: 30vh;
+        height: 32vh;
     }
 
     .img-left {
@@ -463,11 +446,11 @@ a {
     }
 
     .callout-container {
-        height: 30vh;
+        height: 35vh;
         margin-top: 50px;
         padding-top: 25px;
-        background: url(../images/hands.png) no-repeat fixed;
-        background-size: cover;
+        background: url(../images/logo_new.png) no-repeat fixed;
+        background-size: contain;
     }
 
     .whatexpect-container {
@@ -508,7 +491,7 @@ a {
         background-position: center;
     }
     .outer {
-        height: 25vh;
+        height: 28vh;
     }
 
     .img-left {
@@ -520,16 +503,17 @@ a {
     }
 
     .callout-container {
-        height: 20vh;
+        height: 30vh;
         margin-top: 50px;
         padding-top: 20px;
-        background: url(../images/hands.png) no-repeat fixed;
+        background: url(../images/logo_new.png) no-repeat fixed;
         background-position: 50% 5%;
         background-size: contain;
 
         animation-name: hero-zoom;
         animation-duration: 5s;
         animation-fill-mode: forwards;
+
     }
 
     .pricing-container {
