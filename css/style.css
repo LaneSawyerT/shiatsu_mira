@@ -491,7 +491,7 @@ a {
         background-position: center;
     }
     .outer {
-        height: 28vh;
+        height: 200px;
     }
 
     .img-left {
@@ -503,17 +503,14 @@ a {
     }
 
     .callout-container {
-        height: 30vh;
+        height: 200px;
         margin-top: 50px;
         padding-top: 20px;
         background: url(../images/logo_new.png) no-repeat fixed;
         background-size: contain;
-        background-position-y: 20px;
-
-        animation-name: hero-zoom;
-        animation-duration: 5s;
-        animation-fill-mode: forwards;
-
+        background-position-y: 50px;
+        animation: none;
+        display: block;
     }
 
     .pricing-container {

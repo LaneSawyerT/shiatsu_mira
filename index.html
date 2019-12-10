@@ -165,7 +165,9 @@
 	<script type="text/javascript" src="js/script.js"></script>
 	<script>
 		$(document).ready(function() {
+            if ($(".callout-container").css("display") == "none") {
             $(".callout-container").css("display", "flex").hide().fadeIn(5000)
+            }
         });
 	</script>
 </body>
