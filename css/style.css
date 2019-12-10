@@ -440,6 +440,16 @@ a {
 }
 
 @media (max-width: 800px) and (min-width:500px) {
+    
+    .pricing-container {
+        width: 100vw;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .aboutpic-container {
+        background-position: center;
+    }
     .outer {
         height: 30vh;
     }
@@ -460,10 +470,16 @@ a {
         background-size: cover;
     }
 
+    .whatexpect-container {
+        height: 30vh;
+        background-size: cover;
+        background-position: center;
+    }
+
 
     .expect-container {
         height: 30vh;
-        margin-t3p: 50px;
+        margin-top: 50px;
         padding-top: 150px;
         background-position: 0 -200px;
     }
@@ -487,6 +503,10 @@ a {
 
 
 @media (max-width: 499px) {
+
+    .aboutpic-container {
+        background-position: center;
+    }
     .outer {
         height: 25vh;
     }
@@ -512,6 +532,12 @@ a {
         animation-fill-mode: forwards;
     }
 
+    .pricing-container {
+        width: 100vw;
+        background-size: cover;
+        background-position: center;
+    }
+
     .jumbotron h1 {
         font-size: 1.8em;
     }
@@ -535,9 +561,15 @@ a {
 
     .expect-container {
         height: 50vh;
-        background: url(../images/massage.jpg) no-repeat;
-        background-size: cover;
+        background: url(../images/what_shiatsu1.jpg) no-repeat;
+        background-size: contain;
     }
+
+    .whatexpect-container {
+    height: 50vh;
+    background-size: contain;
+    background-position: center;
+}
 
     .price-container {
         height: 150vh;
