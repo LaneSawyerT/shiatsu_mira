@@ -1,8 +1,63 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Serif', serif;
+}
+
+@font-face {
+    font-family: "TrajanPro";
+    src:
+        local('TrajanPro Regular'),
+        local('TrajanPro'),
+        url("../fonts/TrajanPro-Regular.ttf");
 }
 
 /* Containers */
+
+.aboutpic-container {
+    height: 85vh;
+    background: url(../images/about.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0% -75px;
+}
+
+.pricing-container {
+    height: 123vh;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../images/pricing.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.pricing-container img {
+    width: 100%;
+    height: auto;
+}
+
+.pricing-content {
+    padding: 50px;
+    color:white;
+}
+
+.pricing-content h1 {
+    font-size:6rem;
+}
+
+.pricing-box {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    height: 400px;
+    bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    background: rgba(229, 255, 245, 0.5);
+    color: #152019;
+    padding-left:.5em
+}
+
 
 .container-wrapper {
     text-align: center;
@@ -45,10 +100,17 @@ body {
 }
 
 .expect-container {
-    height: 50vh;
-    background: url(../images/massage.jpg) no-repeat;
+    height: 85vh;
+    background: url(../images/what_shiatsu1.jpg) no-repeat;
     background-size: cover;
-    background-position: 0% -400px;
+    background-position: 0% -180px;
+}
+
+.whatexpect-container {
+    height: 90vh;
+    background: url(../images/whatexpect.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0% -135px;
 }
 
 .expect {
@@ -57,10 +119,12 @@ body {
 }
 
 .expect-text {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     background: white;
-    padding: 15px;
-}
+    padding-top: 10px;
+    padding-right: 19px;
+    padding-bottom: 10px;
+    padding-left: 19px;}
 
 .quotes-container {
     background: rgba(229, 255, 245, 0.5);
@@ -116,8 +180,8 @@ body {
 }
 
 .content-container {
-    padding-top: 35px;
-    padding-bottom: 75px;
+    padding-top: 5px;
+    padding-bottom: 25px;
 }
 
 .extra-bold {
@@ -126,6 +190,7 @@ body {
     font-family: Arial, Helvetica, sans-serif
 }
 
+
 /* Navbar */
 
 .navbar {
@@ -133,7 +198,7 @@ body {
     color: #7FFFD4;
     background-position: right;
     text-align: right;
-    font-family: Cinzel;
+    font-family: TrajanPro;
     margin-bottom: 0;
     position: fixed;
     top: 0;
@@ -297,11 +362,16 @@ body {
     margin-bottom: 0;
     border-bottom: 0;
     text-align: center;
+    padding:15px;
+    padding-left:15px;
+}
+
+h2 {
+    font-family: TrajanPro;
 }
 
 .page-header h2 {
     margin-top: 0;
-    font-family: Cinzel;
 }
 
 .price-heading {
@@ -317,6 +387,11 @@ body {
 
 blockquote.quote {
     border-left: 0;
+    text-align: center;
+}
+
+blockquote footer {
+    text-align: center;
 }
 
 /* Features */
@@ -344,8 +419,10 @@ blockquote.quote {
 }
 
 .contact-box {
+    text-align: center;
     padding: 5px;
     border: 1px solid white;
+    margin: 20px;
 }
 
 a {
@@ -383,9 +460,10 @@ a {
         background-size: cover;
     }
 
+
     .expect-container {
         height: 30vh;
-        margin-top: 50px;
+        margin-t3p: 50px;
         padding-top: 150px;
         background-position: 0 -200px;
     }
@@ -473,7 +551,6 @@ a {
     .expect-text {
         font-size: 1.5rem;
         background: white;
-        padding: 15px;
     }
 }
 
@@ -525,3 +602,4 @@ a {
         display: block !important;
     }
 }
+
