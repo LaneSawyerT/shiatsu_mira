@@ -507,8 +507,8 @@ a {
         margin-top: 50px;
         padding-top: 20px;
         background: url(../images/logo_new.png) no-repeat fixed;
-        background-position: 50% 5%;
         background-size: contain;
+        background-position-y: 20px;
 
         animation-name: hero-zoom;
         animation-duration: 5s;
