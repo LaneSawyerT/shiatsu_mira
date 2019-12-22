@@ -78,7 +78,7 @@ body {
 
 .callout-container {
     height: 30vh;
-    background: url(../images/new_logo2.png) no-repeat  fixed;
+    background: url(../images/new_logo2.png) no-repeat fixed;
     background-size: contain;
     display: none;
     align-items: center;
@@ -422,10 +422,9 @@ a {
         font-size: 2rem;
     }
     .callout-container {
-        height: 340px;
         margin-top: 50px;
         padding-top: 25px;
-        background: url(../images/logo_new.png) no-repeat fixed;
+        background: url(../images/new_logo2.png) no-repeat fixed;
         display: block;
         background-size: 100% auto;
         animation: none;
@@ -491,13 +490,14 @@ a {
     }
 
     .callout-container {
-        height: 150px;
+        
         margin-top: 50px;
         padding-top: 25px;
         background: url(../images/new_logo2.png) no-repeat fixed;
         display: block;
         background-size: 100% auto;
         animation: none;
+        background-position-y: 50px;
     }
 
     .whatexpect-container {
@@ -534,11 +534,15 @@ a {
 
 @media (max-width: 499px) {
 
+    .bm {
+        margin-bottom: 20px;
+    }
+
     .aboutpic-container {
         background-position: center;
     }
     .outer {
-        height: 200px;
+        height: 115px;
     }
 
     .img-left {
@@ -550,12 +554,12 @@ a {
     }
 
     .callout-container {
-        height: 200px;
+        height: 75px;
         margin-top: 50px;
         /* padding-top: 20px; */
-        background: url(../images/logo_new.png) no-repeat fixed;
+        background: url(../images/new_logo2.png) no-repeat fixed;
         background-size: 100%;
-        background-position-y: 1.5%;
+        background-position-y: 50px;
         animation: none;
         display: block;
     }
@@ -605,7 +609,7 @@ a {
 
     .expect {
         position: relative;
-        top: -75px;
+        top: 0;
     }
 
     .expect-text {
