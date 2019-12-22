@@ -378,6 +378,10 @@ blockquote footer {
     text-align: center;
 }
 
+.quotefooter {
+    text-align: right;
+}
+
 /* Features */
 
 .feature {
